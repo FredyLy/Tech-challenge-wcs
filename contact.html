@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    	<title>Web Development Tech Challenge</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="bloc_page">
+			<header>
+				<a href="index.html"><img src="images/logo.png" alt="Colchis Kingdom Logo"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">About</a></li>
+					    <li><a href="royal-family.html">Royal Family</a></li>
+				        <li><a href="assets.html">Assets</a></li>
+				        <li><a href="contact.html" class="active_page">Contact Us</a></li>
+					</ul>
+				</nav>
+
+			</header>
+
+
+			<!-- Add this to a seperate page, e.g. contact.html-->
+		   	<!--Contact the Royal Kingdom -->
+
+			<section id="banniere_contact">
+				<div class="banniere">
+					<h1 class="banniere_descr">Contact us</h1>
+				</div>
+			</section>
+
+
+			<section>
+				<div>
+					<h2><img src="images/ico_start.png" alt="" class="ico_start" />Contact form<img src="images/ico_end.png" alt="" class="ico_end" /></h2>
+				</div>
+
+				<div class="warning">
+					<p>Fill in the form below to contact the Royal Kingdom</p>
+					<img src="images/ico_warning.png" alt="" class="ico_warning"/>
+					<p>We don’t allow mails by homing pigeon anymore.</p>
+				</div>
+			</section>
+
+			<section>
+				<fieldset>
+					<legend>Send us a message!</legend>
+
+					<form method="post" action="#" id="contactForm">
+						<label for="name"> Your name: </label><br />
+						<input type="text" name="name" id="name" placeholder="King Aeetes" required><br />
+
+						<label for="email"> Your email: </label><br />
+						<input type="email" name="email" id="email" placeholder="example@colchiskingdom.com" required><br />
+
+						<label for="message"> Your message: </label><br />
+						<textarea rows="8" name="message" id="message"></textarea>
+
+						<br /><br />
+
+						<img src="images/ico_start.png" alt="" class="ico_start" /><input type="submit" value="Send"><img src="images/ico_end.png" alt="" class="ico_end" />
+					</form>
+				</fieldset>
+			</section>
+
+
+			<footer>
+				<div id="auteur">
+					<p>Conchis Royal Kingdom website, by Fredy L.</p>
+					<p>Project: Tech Challenge - Wild Code School (July 22nd, 2020)</p>
+				</div>
+				<div id="reseaux_sociaux">
+					<p>Follow us on social networks:</p>
+					<p>
+						<a href="#"><img src="images/facebook.png" alt="Facebook"/></a>
+						<a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+						<a href="#"><img src="images/vimeo.png" alt="Vimeo" /></a>
+						<a href="#"><img src="images/flickr.png" alt="Flickr" /></a>
+						<a href="#"><img src="images/rss.png" alt="RSS" /></a>
+					</p>
+				</div>
+			</footer>
+
+		</div>
+
+		<div id="scrollUp">
+        	<a href="#top"><img src="images/ico_top.png" alt=""/></a>
+    	</div>
+
+	    <!-- Connect the Javascript file -->
+		<script src="./js/script.js"></script>
+
+	</body>
+
+</html>

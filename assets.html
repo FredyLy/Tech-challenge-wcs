@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    	<title>Web Development Tech Challenge</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="bloc_page">
+			<header>
+				<a href="index.html"><img src="images/logo.png" alt="Colchis Kingdom Logo"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html">About</a></li>
+				        <li><a href="royal-family.html">Royal Family</a></li>
+				        <li><a href="assets.html" class="active_page">Assets</a></li>
+				        <li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+		    <!-- Add this to a seperate page, e.g. assets.html
+					Kingdom's Royal Assets or Sporting Results table -->
+
+			<section id="banniere_assets">
+				<div class="banniere">
+					<h1 class="banniere_descr">Colchis Kingdom's Royal Assets</h1>
+				</div>
+			</section>
+
+			<section>
+				<div>
+					<h2><img src="images/ico_start.png" alt="" class="ico_start" />The Kingdom's Royal Assets<img src="images/ico_end.png" alt="" class="ico_end" /></h2>
+				</div>
+
+				<section id="assets">
+					<blockquote>
+					    <p class="quote">« We are one of the most wealthy family on the entire world.<br />
+						By coming to my kingdom, you’ll see gold and wine! »</p>
+					   <p class="author">— King Aeetes</p>
+					</blockquote>
+
+					<div id="inventory">
+					    <table>
+							<caption><h3>Inventory</h3></caption>
+					        <thead>
+					          <tr>
+					            <th>Items</th>
+					            <th>Quantity</th>
+					            <th>Worth</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					        <tr>
+					        	<td>Gold</td>
+					            <td>500 tons</td>
+					            <td>5 billon lari</td>
+					        </tr>
+							<tr>
+								<td>Silver</td>
+								<td>50 tons</td>
+								<td>980 million lari</td>
+							</tr>
+					        <tr>
+					            <td>Copper</td>
+					            <td>20 tons</td>
+					            <td>96 million lari</td>
+					        </tr>
+							<tr>
+								<td>Iron</td>
+								<td>350 tons</td>
+								<td>9 million lari</td>
+							</tr>
+							<tr>
+								<td>Gems</td>
+								<td>445,000 kg</td>
+								<td>1,2 million lari</td>
+							</tr>
+					        <tr>
+					            <td>Rhum</td>
+					            <td>156,000 l</td>
+					            <td>350 thousand lari</td>
+					        </tr>
+							<tr>
+								<td>Wine</td>
+								<td>100,000 l</td>
+								<td>800 thousand lari</td>
+							</tr>
+							<tr>
+					            <td>Stables</td>
+					            <td>450</td>
+					            <td>60 millions lari</td>
+							</tr>
+							<tr>
+  					            <td>Castles</td>
+  					            <td>5</td>
+  					            <td>30 millions lari</td>
+							</tr>
+							<tr>
+  					            <td>Horses</td>
+  					            <td>12,500</td>
+  					            <td>120 thousand lari</td>
+  					        </tr>
+							<tr>
+								<td>Lands</td>
+								<td>160</td>
+								<td>780 thousand lari</td>
+							</tr>
+							<tr>
+								<td>Boats</td>
+								<td>15,000</td>
+								<td>750 thousand lari</td>
+							</tr>
+							<tr>
+								<td>Slaves</td>
+								<td>128,000</td>
+								<td>1,28 million lari</td>
+							</tr>
+							<tr>
+								<td>Warriors</td>
+								<td>300,000</td>
+								<td>9 million lari</td>
+							</tr>
+							<tr>
+								<td>Pottery</td>
+								<td>10,500</td>
+								<td>205 thousand lari</td>
+							</tr>
+					        </tbody>
+					    </table>
+				  </div>
+			  </section>
+
+		  </section>
+
+			<footer>
+				<div id="auteur">
+					<p>Conchis Royal Kingdom website, by Fredy L.</p>
+					<p>Project: Tech Challenge - Wild Code School (July 22nd, 2020)</p>
+				</div>
+				<div id="reseaux_sociaux">
+					<p>Follow us on social networks:</p>
+					<p>
+						<a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+						<a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+						<a href="#"><img src="images/vimeo.png" alt="Vimeo" /></a>
+						<a href="#"><img src="images/flickr.png" alt="Flickr" /></a>
+						<a href="#"><img src="images/rss.png" alt="RSS" /></a>
+					</p>
+				</div>
+			</footer>
+
+
+
+
+
+		</div>
+		<div id="scrollUp">
+			<a href="#top"><img src="images/ico_top.png" alt=""/></a>
+		</div>
+
+
+		<!-- Javascript elements -->
+
+		<script>
+
+			//Social networks pop-up
+		const message_reseaux_sociaux = "Unfortunately, social networks are not operational yet. Try again in 27 or 28 centuries."
+
+		document
+			.getElementById("reseaux_sociaux")
+			.addEventListener("click",
+				function(event) {
+					event.preventDefault();
+					alert(message_reseaux_sociaux);
+				}
+			);
+
+			//scrollUp button
+			var mybutton = document.getElementById("scrollUp");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+				// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+
+		</script>
+	</body>
+
+</html>

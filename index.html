@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+    	<title>Web Development Tech Challenge</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="bloc_page">
+
+		    <!-- Logo and navbar -->
+			<header>
+				<a href="index.html"><img src="images/logo.png" alt="Colchis Kingdom Logo"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="active_page">About</a></li>
+				        <li><a href="royal-family.html">Royal Family</a></li>
+				        <li><a href="assets.html">Assets</a></li>
+				        <li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+<!-- Hero Section -->
+			<section id="banniere_hero">
+				<div class="banniere">
+					<h1 class="banniere_descr">Welcome to the Royal Kingdom of Colchis</h1>
+				</div>
+			</section>
+
+			<section id="about">
+				<blockquote>
+					<p class="quote">« Welcome to my Kingdom. <br />Everyone in Colchis is a guest under my protection. »</p>
+				   <p class="author">— King Aeetes</p>
+				</blockquote>
+
+				<div>
+
+					<div>
+						<h2><img src="images/ico_start.png" alt="" class="ico_start" />About Colchis<img src="images/ico_end.png" alt="" class="ico_end" /></h2>
+					</div>
+
+					<div>
+						<p>Colchis is the home of Aeëtes, Medea, Idyia, the Golden Fleece and the fire-breathing bulls Khalkotauroi.</p>
+						<p>According to the Greek mythology, Colchis was a fabulously wealthy land situated on the mysterious periphery of the heroic world. Here in the sacred grove of the war god Ares, King Aeëtes hung the Golden Fleece until it was seized by Jason and the Argonauts.</p>
+						<p>Colchis was also the land where the mythological Prometheus was punished by being chained to a mountain while an eagle ate at his liver for revealing to humanity the secret of fire.</p>
+
+						<p class="source">Source: <a href="https://en.wikipedia.org/wiki/Colchis#In_mythology" target="_blank">Wikipédia</a></p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div id="my_family">
+					<div>
+						<h2><img src="images/ico_start.png" alt="" class="ico_start" />The King and his family<img src="images/ico_end.png" alt="" class="ico_end" /></h2>
+					</div>
+				</div>
+
+				<div id="flexbox_my_family">
+					<figure>
+						<a href="royal-family.html#aeetes"><img src="images/aeetes_mini.jpg" alt="King Aeetes"></a>
+						<figcaption>King Aeetes</figcaption>
+					</figure>
+
+					<figure>
+						<a href="royal-family.html#idyia"><img src="images/idyia_mini.jpg" alt="Queen Idyia"></a>
+						<figcaption>Wife of King Aeetes, <br />Queen Idyia</figcaption>
+					</figure>
+
+					<figure>
+						<a href="royal-family.html#medea"><img src="images/medea_mini.jpg" alt="Princess Medea"></a>
+						<figcaption>Daughter of King Aeetes, <br />Princess Medea</figcaption>
+					</figure>
+				</div>
+				<p>Click on the above pictures to learn more about the King and his family.</p>
+			</section>
+
+
+
+
+
+
+			<footer>
+				<div id="auteur">
+					<p>Conchis Royal Kingdom website, by Fredy L.</p>
+					<p>Project: Tech Challenge - Wild Code School (July 22nd, 2020)</p>
+				</div>
+				<div id="reseaux_sociaux">
+					<p>Follow us on social networks:</p>
+					<p>
+						<a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+						<a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+						<a href="#"><img src="images/vimeo.png" alt="Vimeo" /></a>
+						<a href="#"><img src="images/flickr.png" alt="Flickr" /></a>
+						<a href="#"><img src="images/rss.png" alt="RSS" /></a>
+					</p>
+				</div>
+			</footer>
+
+		</div>
+
+		<div id="scrollUp">
+			<a href="#top"><img src="images/ico_top.png" alt=""/></a>
+		</div>
+
+		
+		<!-- Javascript elements -->
+
+		<script>
+
+			//Social networks pop-up
+		const message_reseaux_sociaux = "Unfortunately, social networks are not operational yet. Try again in 27 or 28 centuries."
+
+		document
+			.getElementById("reseaux_sociaux")
+			.addEventListener("click",
+				function(event) {
+					event.preventDefault();
+					alert(message_reseaux_sociaux);
+				}
+			);
+
+			//scrollUp button
+			var mybutton = document.getElementById("scrollUp");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+				// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+
+		</script>
+
+	</body>
+</html>
